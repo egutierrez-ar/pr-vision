@@ -1,0 +1,103 @@
+{
+    "python.pythonPath": "${workspaceRoot}/.venv/Scripts/python.exe",
+    "python.envFile": "${workspaceRoot}/.env",
+    "python.testing.unittestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.languageServer": "Pylance",
+    "python.testing.cwd": "${workspaceRoot}",
+    "python.testing.pytestArgs": [
+        "tests",
+        // "--fixtures",
+        // "--doctest-modules", 
+        // "--doctest-report", 
+        // "ndiff", 
+        "-v",
+    ],
+    "launch": {
+        // Use IntelliSense to learn about possible attributes.
+        // Hover to view descriptions of existing attributes.
+        // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "name": "Python: Current File",
+                "type": "python",
+                "request": "launch",
+                "program": "${file}",
+                // "args": ["--start_time", "hammer"],
+                "console": "integratedTerminal",
+                "cwd": "${workspaceFolder}",
+                "env": {
+                    "PYTHONPATH": "${cwd}",
+                    "HELLO": "world"
+                }
+            }
+        ]
+    },
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/*/**": true,
+        "**/*env/*/**": true,
+      },
+    "workbench.editor.enablePreview": true,
+    "workbench.editor.enablePreviewFromQuickOpen": true,
+    "telemetry.enableTelemetry": false,
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.vscode": false,
+        "**/CVS": true,
+        "**/*egg-info": true,
+        "**/*_venv": true,
+        "**/*env": true,
+        "**/*env7": true,
+        "**/*.venv": true,
+        "**/*-project": true,
+        "**/*-workspace": true,
+        "**/*.ini": true,
+        "**/__pycache__": true,
+        "**/*.ipynb_checkpoints": true,
+        "**/.DS_Store": true,
+        "**/*.pytest_cache": true
+    },
+    "window.title": "${activeEditorShort}${separator}${rootName}",
+    "editor.formatOnPaste": false,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.snippetSuggestions": "top",
+    "editor.copyWithSyntaxHighlighting": false,
+    "git.ignoreMissingGitWarning": true,
+    "window.zoomLevel": 0,
+    "workbench.settings.editor": "json",
+    "workbench.settings.openDefaultSettings": false,
+    "editor.minimap.enabled": false,
+    "editor.mouseWheelZoom": true,
+    "workbench.editor.highlightModifiedTabs": true,
+    "breadcrumbs.enabled": true,
+    "editor.renderWhitespace": "selection",
+    "python.formatting.autopep8Args": [
+        "--max-line-length", "140", 
+        "--experimental",
+        "--ignore","E402"
+    ],
+    "autoDocstring.docstringFormat": "numpy",
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.fontLigatures": false,
+        "editor.rulers": [
+            80,
+            100,
+            120
+        ],
+        "editor.defaultFormatter": "ms-python.python"
+    },
+    "python.dataScience.sendSelectionToInteractiveWindow": true,
+    "extensions.ignoreRecommendations": true,
+    "typescript.tsc.autoDetect": "off",
+    "files.autoSave": "off",
+    "debug.allowBreakpointsEverywhere": true,
+    "html.autoClosingTags": false,
+]
